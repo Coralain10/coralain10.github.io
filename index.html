@@ -30,10 +30,24 @@
       <div id="links">
         <div id="main-links" class="links"></div>
         <div id="common-links" class="links"></div>
+        <button id="share-qr" class='primary'
+        onclick="getElementById('dialog-qr')?.setAttribute('open', true);">
+          <i class="material-icons">qr_code</i>
+        </button>
       </div>
     </section>
 
   </main>
+
+  <dialog id="dialog-qr" open="false"
+  onclick="this.setAttribute('open', false);">
+    <div class="cont">
+      <img src="images/qr.png"/>
+    </div>
+    <button class="secondary" onclick="this.parent?.setAttribute('open', false);">
+      <i class="material-icons">check</i>
+    </button>
+  </dialog>
 
   <script>
     const ocupations = [
