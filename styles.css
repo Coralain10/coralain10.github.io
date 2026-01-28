@@ -84,6 +84,7 @@ button {
   font-size: 1em;
   background: transparent;
   cursor: pointer;
+  transition: 0.25s;
 }
 button::before {
   content: '';
@@ -115,6 +116,16 @@ button:first-child {
 button img {
   height: 2em;
   max-width: 2.5em;
+}
+button:hover {
+  filter: brightness(1.05);
+  -webkit-filter: brightness(1.05);
+  scale: 1.025;
+}
+button:active {
+  scale: 1.025;
+  filter: brightness(1.125) drop-shadow(0px 0pt 2pt rgb(161, 172, 224));
+  -webkit-filter: brightness(1.125) drop-shadow(0px 0pt 2pt rgb(161, 172, 224));
 }
 
 
