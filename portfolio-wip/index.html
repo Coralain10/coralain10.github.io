@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" /> -->
     <title>cora-portfolio</title>
-    <script type="module" crossorigin src="./assets/index-20t87Bd8.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/CUJQO9d8.css">
+    <script type="module" crossorigin src="./assets/index-DlW9gYFx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/CbYtvkcZ.css">
   </head>
   <body>
     <div id="webgl" class="wh-full">
-      <div id="ui" class="wh-full"></div>
+      <div id="ui" class="wh-full">
+        <div class="selector anchor-down anchor-left" id="travel-modes-selector">
+          <div class="radio-selector">
+            <input type="radio" id="tm-exploration" name="travel-mode" value="EXPLORATION" checked/>
+            <label for="tm-exploration">EXPLORATION</label>
+          </div>
+          <div class="radio-selector">
+            <input type="radio" id="tm-regular" name="travel-mode" value="REGULAR" checked/>
+            <label for="tm-regular">REGULAR</label>
+          </div>
+        </div>
+      </div>
       <canvas id="c" class="wh-full"></canvas>
       <div id="scrollable-area" class="wh-full">
         <div id="scroll-area" class="w-full"></div>
